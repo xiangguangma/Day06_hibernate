@@ -3,7 +3,6 @@ package com.lanou.test;
 import com.lanou.dao.StudentDao;
 import com.lanou.dao.impl.StudentDaoImpl;
 import com.lanou.domain.Student;
-import org.hibernate.Session;
 import org.junit.Test;
 
 /**

@@ -17,7 +17,7 @@
     <!--配置没次生成表的策略
           create: 每次运行都生成新的表, 一般用于测试
           create-drop: 每次运行都生成新的表, 在运行结束时在把生成的表删除
-          Update: 如果有表跟新表, 没有表创建表
+          update: 如果有表跟新表, 没有表创建表
           validate: 如果有表, 则验证表结果, 如果与原来的表结构不一致, 则抛出异常
     -->
     <property name="hibernate.hbm2ddl.auto">update</property>

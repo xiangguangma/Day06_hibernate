@@ -3,7 +3,6 @@ package com.lanou.test;
 import com.lanou.domain.Student;
 import org.hibernate.*;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.cfg.annotations.QueryBinder;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,7 +16,7 @@ import java.util.List;
 public class StudentTest {
     /*
         session的工厂类对象, 是线程安全的, 一个数据库对应一个session工厂类对象
-        通常在项目启动时初始化该对象, 用 configuration对象创建
+        通常在项目启动时初始化该对象, 用 configuration 对象创建
      */
     private SessionFactory sessionFactory;
 
@@ -25,8 +24,8 @@ public class StudentTest {
     private Session session;
 
     /*
-        事务对象, 与 JDBC 中的实物类相视,只不过hibernate中的事务是不自动提交的, 而JDBC中的事务
-        是自动提交的,hibernate中的事务需要手动提交
+        事务对象, 与 JDBC 中的实物类相似,只不过hibernate中的事务是不自动提交的, 而JDBC中的事务
+        是自动提交的, hibernate 中的事务需要手动提交
      */
     private Transaction transaction;
 
